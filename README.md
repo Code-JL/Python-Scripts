@@ -27,3 +27,25 @@ The `massReplace.py` script is a Python tool that performs mass replacement of n
     a   b   word
     d   e   f   g   longword
     ```
+
+## fileReplace.py
+
+**Description:**
+
+The `fileReplace.py` script is a Python tool that performs text replacement within files, including their filenames. It uses a key file (`Input/Key.txt`) to define replacement pairs and a file (`Input/Files.txt`) listing the target files. The script replaces all occurrences of the "old" text with the "new" text, both in the content and the filename, and saves the modified files in the `Output/` directory.
+
+**File Formats:**
+
+*   **`Input/Key.txt`:** This file contains the replacement pairs. Each line should contain the text to be replaced (old) and its replacement (new), separated by the first whitespace.
+    ```
+    old_text new_text
+    replace_this with_this
+    aaa bbb
+    ```
+
+*   **`Input/Files.txt`:** This file contains a list of file paths, one file per line, that the script will process.
+    ```
+    input/aaa502.py
+    input/sjtosw123.txt
+    ```
+* **Output/:** This is the directory the replaced files will be outputted to. The files will have thier contents and names replaced.
